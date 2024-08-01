@@ -1,5 +1,6 @@
 import React from "react";
 import  UseEffectHook from "./UseEffectHook";
+import { UseStateHook } from "./UseStateHook";
 
 const App = () => {
   // let [count, setCount] = useState(0);
@@ -9,7 +10,8 @@ const App = () => {
     <h2>Count: {count}</h2>
     <button onClick={() => setCount(count++)}>Counter</button>
      */}
-     <UseEffectHook />
+     {/* <UseEffectHook /> */}
+     <UseStateHook />
      </>
   )
 }
