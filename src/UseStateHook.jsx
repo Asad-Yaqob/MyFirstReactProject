@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 
-export const UseStateHook = () => {
+ const UseStateHook = () => {
     const [name, setName] = useState("Jhon Doe...");
     const [age, setAge] = useState(20);
     const [like, setLike] = useState(true);
@@ -30,3 +30,5 @@ export const UseStateHook = () => {
     </>
   )
 }
+
+export default UseStateHook
