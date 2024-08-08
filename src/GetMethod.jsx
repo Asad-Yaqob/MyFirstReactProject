@@ -4,8 +4,6 @@ import React, { useEffect, useState } from 'react'
  const GetMethod = () => {
   const [data, setData]  = useState([]);
   useEffect(() => {
-    console.log("Working")
- 
     //Fetch method
     // fetch('https://jsonplaceholder.typicode.com/comments').then((response) => {
     //     response.json().then((result) =>{
