@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 
- const WorkingWithApi = () => {
+ const GetMethod = () => {
   const [data, setData]  = useState([]);
   useEffect(() => {
     console.log("Working")
@@ -19,7 +19,7 @@ import React, { useEffect, useState } from 'react'
     
   return (
     < >
-    <h2>Working With Api</h2>
+    <h2>Get Api Method</h2>
     <table border={1}>
         <thead>
             <tr>
@@ -46,4 +46,4 @@ import React, { useEffect, useState } from 'react'
   )
 }
 
-export default WorkingWithApi
+export default GetMethod
