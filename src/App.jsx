@@ -1,11 +1,13 @@
-import React from "react";
-import PutMethod from "./PutMethod";
+import React, { createContext, useState } from "react";
+import First from "./Props/First";
 
+export const myData = createContext();
 
 const App = () => {
+  const [score, setScore] = useState(20);
   // let [count, setCount] = useState(0);
   return (
-    <>
+    <myData.Provider value={{data : score}} >
     {/* <h2>My First Component</h2>
     <h2>Count: {count}</h2>
     <button onClick={() => setCount(count++)}>Counter</button>
@@ -13,9 +15,9 @@ const App = () => {
      {/* <UseEffectHook /> */}
      {/* <UseStateHook /> */}
      {/* <GetMethod /> */}
-     <PutMethod />
-     
-     </>
+     {/* <PutMethod /> */}
+     <First />
+     </ myData.Provider>
   )
 }
 
