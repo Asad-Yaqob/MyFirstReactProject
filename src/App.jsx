@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 import First from "./Props/First";
 import Counter from "./reducer_work/Counter";
+import UseReducerHook from "./UseReducerHook";
 
 export const myData = createContext();
 
@@ -18,7 +19,8 @@ const App = () => {
      {/* <GetMethod /> */}
      {/* <PutMethod /> */}
      {/* <First /> */}
-     <Counter />
+     {/* <Counter /> */}
+     <UseReducerHook />
      </ myData.Provider>
   )
 }
