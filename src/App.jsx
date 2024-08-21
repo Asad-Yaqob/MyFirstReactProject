@@ -2,6 +2,8 @@ import React, { createContext, useState } from "react";
 import First from "./Props/First";
 import Counter from "./reducer_work/Counter";
 import UseReducerHook from "./UseReducerHook";
+import UseMemoHook from "./UseMemoHook";
+import UseCallbackHook from "./UseCallbackHook";
 
 export const myData = createContext();
 
@@ -20,7 +22,9 @@ const App = () => {
      {/* <PutMethod /> */}
      {/* <First /> */}
      {/* <Counter /> */}
-     <UseReducerHook />
+     {/* <UseReducerHook /> */}
+     {/* <UseMemoHook /> */}
+     <UseCallbackHook /> 
      </ myData.Provider>
   )
 }
